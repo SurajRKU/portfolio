@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Raghu Kumar | Software Engineer | Full Stack Developer</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-primary {
+            color: var(--primary-color);
+        }
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+        .hover\:bg-primary:hover {
+            background-color: var(--primary-hover);
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-900 relative inline-block mb-16;
+        }
+        .section-title::after {
+            content: '';
+            @apply absolute bottom-0 left-0 w-1/2 h-1 bg-primary rounded-full -mb-4;
+        }
+        .nav-link {
+            @apply px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-all transform hover:scale-105 hover:shadow-md flex items-center gap-2;
+        }
+        .skill-tag {
+            @apply inline-block px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors;
+        }
+        .course-tag {
+            @apply inline-block px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors;
+        }
+        .tech-container {
+            @apply flex flex-wrap gap-1.5 mb-4;
+        }
+        .card-hover {
+            @apply transition-all duration-300 hover:shadow-lg hover:transform hover:scale-[1.02];
+        }
+        .icon-bounce {
+            @apply transform transition-transform hover:scale-110 hover:text-primary;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary font-['Poppins']">SK</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user-circle"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="#education" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <a href="Assets/Suraj_Raghu Kumar_Resume_2025.pdf" class="nav-link">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-blue-50 to-gray-50">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <!-- Text Content -->
+                    <div class="flex-1 text-left">
+                        <div class="space-y-6">
+                            <h1 class="text-2xl md:text-4xl font-bold text-gray-900 leading-tight font-['Poppins'] truncate max-w-full">
+                                Suraj Raghu Kumar
+                            </h1>
+                            <h2 class="text-xl md:text-2xl text-primary font-semibold font-['Poppins']">
+                                Software Engineer | Full Stack Developer | Tech Enthusiast
+                            </h2>
+                            <p class="text-lg md:text-xl text-gray-600 max-w-2xl">
+                                Passionate software engineer with expertise in full-stack development and cloud technologies.
+                                <span class="font-semibold text-primary block mt-2">Actively seeking full-time Software Engineering roles starting June 2025.</span>
+                            </p>
+                            <div class="flex gap-4 mt-8">
+                                <a href="Assets/Suraj_Raghu Kumar_Resume_2025.pdf" 
+                                   class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all transform hover:scale-105 hover:shadow-lg">
+                                    Download Resume
+                                </a>
+                                <a href="#contact" 
+                                   class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-lg">
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile Image -->
+                    <div class="flex-1 flex justify-center md:justify-end" data-aos="fade-left" data-aos-delay="200">
+                        <div class="relative">
+                            <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-black shadow-2xl transform hover:scale-105 transition-all duration-300">
+                                <img src="Assets/Suraj_Image.jpeg" 
+                                     alt="Suraj Raghu Kumar" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Two Columns -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- About Me Column -->
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800 font-['Poppins'] flex items-center gap-2">
+                            <i class="fas fa-user-circle text-primary"></i>
+                            About Me
+                        </h3>
+                        
+                        <!-- Quick Info -->
+                        <div class="flex flex-wrap gap-6 mb-6">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                <span class="text-gray-700 font-medium">Raleigh, NC</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-graduation-cap text-primary text-xl"></i>
+                                <span class="text-gray-700 font-medium">MS in Computer Science</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-briefcase text-primary text-xl"></i>
+                                <span class="text-gray-700 font-medium">2+ Years Experience</span>
+                            </div>
+                        </div>
+
+                        <!-- About Me Text -->
+                        <div class="space-y-4 text-gray-600 leading-relaxed text-justify">
+                            <p>
+                                I'm a results-driven Software Engineer with over 2 years of professional experience at SAP and a solid foundation in full-stack development, cloud computing, and performance optimization. Proficient in Python, Java, C, C++, JavaScript, ABAP, and Ruby, I have experience building scalable applications, optimizing algorithms, and developing real-time Android and web solutions.
+                            </p>
+                            <p>
+                                During my time at SAP, I successfully reduced customer incident reports by 45% through effective debugging, issue resolution, and service process improvements. I've contributed to robust, maintainable software across both enterprise and academic environments using modern technologies like Node.js, React, Firebase, and AWS.
+                            </p>
+                            <p>
+                                I earned my Master's degree in Computer Science from North Carolina State University in May 2025 (GPA: 4.0) and am now seeking a Software Development Engineer role where I can leverage my technical expertise and problem-solving skills to drive innovative, impactful solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Technologies & Tools Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800 font-['Poppins'] flex items-center gap-2">
+                            <i class="fas fa-tools text-primary"></i>
+                            Technologies & Tools
+                        </h3>
+                        <div class="space-y-6">
+                            <!-- Programming Languages -->
+                            <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                                <h4 class="text-lg font-bold mb-3 text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-code text-primary"></i>
+                                    Programming Languages
+                                </h4>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Python</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Java</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">C</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">C++</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Ruby</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">ABAP</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">JavaScript</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">TypeScript</span>
+                                </div>
+                            </div>
+
+                            <!-- Frameworks & Libraries -->
+                            <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                                <h4 class="text-lg font-bold mb-3 text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-layer-group text-primary"></i>
+                                    Frameworks & Libraries
+                                </h4>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">React</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Angular</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Node.js</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Express.js</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Spring Boot</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Android</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Flask</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Django</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Pandas</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">NumPy</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Tkinter</span>
+                                </div>
+                            </div>
+
+                            <!-- Databases -->
+                            <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                                <h4 class="text-lg font-bold mb-3 text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-database text-primary"></i>
+                                    Databases
+                                </h4>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">MariaDB</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">MySQL</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">MongoDB</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">PostgreSQL</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Firebase</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">SAP HANA</span>
+                                </div>
+                            </div>
+
+                            <!-- Cloud & DevOps -->
+                            <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                                <h4 class="text-lg font-bold mb-3 text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-cloud text-primary"></i>
+                                    Cloud & DevOps
+                                </h4>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">AWS</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Docker</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Kubernetes</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Jenkins</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">GitLab</span>
+                                </div>
+                            </div>
+
+                            <!-- Other Tools & Platforms -->
+                            <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-all duration-300">
+                                <h4 class="text-lg font-bold mb-3 text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-wrench text-primary"></i>
+                                    Other Tools & Platforms
+                                </h4>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">JIRA</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Bash</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">ServiceNow</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">REST API</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Linux</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Windows</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">macOS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title font-['Poppins'] !text-3xl !font-extrabold mb-8">Education</h2>
+                <div class="grid gap-8">
+                    <!-- NC State -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <img src="Assets/NC_logo.jpg" alt="NC State Logo" class="w-16 h-16 rounded-lg object-cover border-2 border-gray-100 group-hover:border-primary transition-colors p-1 bg-white shadow-sm group-hover:shadow-md">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors">North Carolina State University</h4>
+                                        <div class="flex items-center mt-1 mb-1">
+                                            <i class="fas fa-map-marker-alt text-primary"></i>
+                                            <span class="ml-1.5 text-gray-600 text-sm">Raleigh, USA</span>
+                                        </div>
+                                        <p class="text-primary font-medium">Master's Degree, Computer Science</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-600 text-sm">Aug 2023 - May 2025</p>
+                                        <p class="text-primary font-semibold mt-1">CGPA: 4.0</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <span class="font-semibold text-gray-700 mb-2 block">Coursework:</span> 
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Algorithms</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Cloud Computing</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Database Management Systems</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Computer Networks</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Data Analysis</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Object Oriented Design and Development</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://drive.google.com/file/d/1yQV7MSO-_OtUM1P9rOPT-_Pld9QZ_zbx/view?usp=sharing" 
+                                       target="_blank" 
+                                       class="inline-flex items-center px-3 py-1.5 bg-emerald-600 text-white text-sm font-medium rounded-md hover:bg-emerald-700 transition-colors group-hover:shadow-sm">
+                                        <span>View Credential</span>
+                                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JSS University -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <img src="Assets/JSS.jpg" alt="JSS University Logo" class="w-16 h-16 rounded-lg object-cover border-2 border-gray-100 group-hover:border-primary transition-colors p-1 bg-white shadow-sm group-hover:shadow-md">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors">JSS Science and Technology University</h4>
+                                        <div class="flex items-center mt-1 mb-1">
+                                            <i class="fas fa-map-marker-alt text-primary"></i>
+                                            <span class="ml-1.5 text-gray-600 text-sm">Karnataka, India</span>
+                                        </div>
+                                        <p class="text-primary font-medium">Bachelor of Engineering, Computer Science</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-600 text-sm">Aug 2017 - Aug 2021</p>
+                                        <p class="text-primary font-semibold mt-1">CGPA: 9.68/10</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <span class="font-semibold text-gray-700 mb-2 block">Coursework:</span> 
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Object Oriented Programming</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Data Structures</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Software Engineering</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Operating Systems</span>
+                                        <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Machine Learning</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://drive.google.com/file/d/1TLBmV1VqLXY_cpKdNas_4HVYt9aWfYSe/view?usp=sharing" 
+                                       target="_blank" 
+                                       class="inline-flex items-center px-3 py-1.5 bg-emerald-600 text-white text-sm font-medium rounded-md hover:bg-emerald-700 transition-colors group-hover:shadow-sm">
+                                        <span>View Credential</span>
+                                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title font-['Poppins'] !text-3xl !font-extrabold mb-8">Work Experience</h2>
+                <div class="space-y-6">
+                    <!-- SAP Experience -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="Assets/SAP_Logo.png" alt="SAP Logo" class="w-16 h-16 object-contain rounded-lg p-2 bg-white shadow-sm group-hover:shadow-md transition-all">
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">Software Engineer</h3>
+                                        <p class="text-primary font-medium">Support and Development</p>
+                                    </div>
+                                    <div class="flex items-center gap-4 text-sm text-gray-600">
+                                        <span class="flex items-center gap-1.5">
+                                            <i class="fas fa-map-marker-alt text-primary"></i>
+                                            Bengaluru, India
+                                        </span>
+                                        <span class="flex items-center gap-1.5">
+                                            <i class="far fa-calendar-alt text-primary"></i>
+                                            July 2021 - July 2023
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 space-y-2.5">
+                                    <div class="experience-content">
+                                        <ul class="space-y-2.5 text-gray-600 experience-preview">
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Specialized in SAP SD master data management across ERP and S/4 HANA on-premise systems, delivering customized solutions for data integration, archiving, and replication using IDOCs and web services.</p>
+                                            </li>
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Developed 3+ ABAP automation reports with the AIS team to resolve database inconsistencies across ECC systems, enabling 300+ SAP customers to improve master data synchronization and reduce manual effort by 70%.</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2.5 text-gray-600 experience-full hidden">
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Diagnosed and resolved complex system issues using ST12 traces, SQL profiling, and call stack analysis, improving SAP system stability across Application Platform and Logistics components.</p>
+                                            </li>
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Expertly troubleshot DRF XML/API payload failures, ensuring seamless business object replication via REST APIs between SAP systems and external interfaces.</p>
+                                            </li>
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Reduced customer incident volume by 45% by publishing SAP Knowledge Base Articles (KBA) that documented root cause analyses and proactive solutions for recurring issues.</p>
+                                            </li>
+                                        </ul>
+                                        <button class="mt-3 text-primary hover:text-blue-600 font-medium flex items-center gap-2 view-more-btn group/btn">
+                                            <span class="view-more-text text-sm">View More</span>
+                                            <i class="fas fa-chevron-down transition-transform view-more-icon group-hover/btn:translate-y-0.5"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tequed Labs Experience -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="Assets/Tequed_labs.jpg" alt="Tequed Labs Logo" class="w-16 h-16 object-contain rounded-lg p-2 bg-white shadow-sm group-hover:shadow-md transition-all">
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">Software Development Intern</h3>
+                                        <p class="text-primary font-medium">Tequed Labs</p>
+                                    </div>
+                                    <div class="flex items-center gap-4 text-sm text-gray-600">
+                                        <span class="flex items-center gap-1.5">
+                                            <i class="fas fa-map-marker-alt text-primary"></i>
+                                            Bengaluru, India
+                                        </span>
+                                        <span class="flex items-center gap-1.5">
+                                            <i class="far fa-calendar-alt text-primary"></i>
+                                            Jul 2019 - Sep 2019
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 space-y-2.5">
+                                    <div class="experience-content">
+                                        <ul class="space-y-2.5 text-gray-600 experience-preview">
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Reduced search latency in the "ShopEase" e-commerce app by optimizing data processing algorithms using hash data structures, improving performance during development.</p>
+                                            </li>
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Built full-stack Android applications using Java (backend) and XML (UI) with Firebase and MongoDB for real-time data sync, authentication, and messaging.</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2.5 text-gray-600 experience-full hidden">
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Ensured scalable, maintainable code by applying modular design patterns and Android SDK best practices, delivering robust mobile solutions.</p>
+                                            </li>
+                                            <li class="flex items-start group/item hover:bg-gray-50 p-1 rounded-lg transition-all">
+                                                <i class="fas fa-caret-right text-primary mt-1 mr-2 group-hover/item:translate-x-1 transition-transform"></i>
+                                                <p class="leading-relaxed">Streamlined release cycles by implementing CI/CD pipelines, automating builds and deployments, and using Git for version control.</p>
+                                            </li>
+                                        </ul>
+                                        <button class="mt-3 text-primary hover:text-blue-600 font-medium flex items-center gap-2 view-more-btn group/btn">
+                                            <span class="view-more-text text-sm">View More</span>
+                                            <i class="fas fa-chevron-down transition-transform view-more-icon group-hover/btn:translate-y-0.5"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title font-['Poppins'] !text-3xl !font-extrabold mb-8">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 card-hover" data-aos="fade-up">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800 flex items-center gap-2 font-['Poppins']">
+                                <i class="fas fa-cloud text-primary"></i>
+                                Microservices on AWS
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Developed and deployed scalable microservices architecture using AWS services and Docker containers.</p>
+                            <div class="tech-container mb-4">
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Node.js</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">AWS</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Docker</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Microservices</span>
+                            </div>
+                            <a href="https://github.com/SurajRKU/Microservices" target="_blank" 
+                               class="inline-flex items-center text-primary hover:text-blue-600 group">
+                                <i class="fab fa-github text-lg mr-2 group-hover:animate-bounce"></i>
+                                <span class="font-medium">View Project</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 card-hover" data-aos="fade-up">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800 flex items-center gap-2 font-['Poppins']">
+                                <i class="fab fa-android text-primary"></i>
+                                Full Stack Android Quiz App
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Interactive quiz application with real-time updates and user authentication using Firebase.</p>
+                            <div class="tech-container mb-4">
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Java</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Android Studio</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Firebase</span>
+                            </div>
+                            <a href="https://github.com/SurajRKU/Android-Application" target="_blank" 
+                               class="inline-flex items-center text-primary hover:text-blue-600 group">
+                                <i class="fab fa-github text-lg mr-2 group-hover:animate-bounce"></i>
+                                <span class="font-medium">View Project</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 card-hover" data-aos="fade-up">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800 flex items-center gap-2 font-['Poppins']">
+                                <i class="fas fa-utensils text-primary"></i>
+                                Full Stack Food Delivery App
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">MERN stack application with JWT authentication and real-time order tracking.</p>
+                            <div class="tech-container mb-4">
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">MongoDB</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Express.js</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">React.js</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Node.js</span>
+                            </div>
+                            <a href="https://github.com/SurajRKU/Foodie" target="_blank" 
+                               class="inline-flex items-center text-primary hover:text-blue-600 group">
+                                <i class="fab fa-github text-lg mr-2 group-hover:animate-bounce"></i>
+                                <span class="font-medium">View Project</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 card-hover" data-aos="fade-up">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800 flex items-center gap-2 font-['Poppins']">
+                                <i class="fas fa-parking text-primary"></i>
+                                Wolf Parking Management System
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Comprehensive parking management system using Java and MariaDB with JDBC integration.</p>
+                            <div class="tech-container mb-4">
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">Java</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">JDBC</span>
+                                <span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">MariaDB</span>
+                            </div>
+                            <a href="https://github.com/SurajRKU/Wolf-Parking-Database-Management" target="_blank" 
+                               class="inline-flex items-center text-primary hover:text-blue-600 group">
+                                <i class="fab fa-github text-lg mr-2 group-hover:animate-bounce"></i>
+                                <span class="font-medium">View Project</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 bg-white">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title font-['Poppins'] !text-3xl !font-extrabold mb-8">Certifications</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- AWS Cloud Practitioner -->
+                    <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-100">
+                        <div class="flex items-center gap-6">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" 
+                                     alt="AWS Cloud Practitioner" 
+                                     class="w-24 h-24 object-contain transform group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">AWS Certified Cloud Practitioner</h4>
+                                    <a href="https://www.credly.com/earner/earned/badge/111fd26c-f063-47ca-b703-eedbfb87b6d8" 
+                                       target="_blank" 
+                                       class="text-primary hover:text-blue-600 transform hover:scale-110 transition-all">
+                                        <i class="fas fa-external-link-alt text-lg"></i>
+                                    </a>
+                                </div>
+                                <p class="text-primary font-medium mb-1">Amazon Web Services</p>
+                                <p class="text-sm text-gray-600">Validates comprehensive understanding of AWS Cloud concepts, services, and deployment patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AWS Solutions Architect -->
+                    <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-100">
+                        <div class="flex items-center gap-6">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" 
+                                     alt="AWS Solutions Architect" 
+                                     class="w-24 h-24 object-contain transform group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">AWS Solutions Architect Associate</h4>
+                                    <a href="https://www.credly.com/earner/earned/badge/be0ea059-0360-4191-9115-ec2ad4aad291" 
+                                       target="_blank" 
+                                       class="text-primary hover:text-blue-600 transform hover:scale-110 transition-all">
+                                        <i class="fas fa-external-link-alt text-lg"></i>
+                                    </a>
+                                </div>
+                                <p class="text-primary font-medium mb-1">Amazon Web Services</p>
+                                <p class="text-sm text-gray-600">Expertise in designing distributed systems and architecting AWS solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hardware and Networking -->
+                    <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-100">
+                        <div class="flex items-center gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-blue-100 transition-all">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" 
+                                         alt="Hardware and Networking" 
+                                         class="w-16 h-16 object-contain transform group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">Hardware and Networking</h4>
+                                    <a href="https://drive.google.com/file/d/1YtFsqs3EJCmz-llFuKMvOuf2wDh9wNEC/view?usp=sharing" 
+                                       target="_blank" 
+                                       class="text-primary hover:text-blue-600 transform hover:scale-110 transition-all">
+                                        <i class="fas fa-external-link-alt text-lg"></i>
+                                    </a>
+                                </div>
+                                <p class="text-primary font-medium mb-1">Linux Academy</p>
+                                <p class="text-sm text-gray-600">Advanced understanding of computer networks and hardware systems.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Systems -->
+                    <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-100">
+                        <div class="flex items-center gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-blue-100 transition-all">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" 
+                                         alt="Database Systems" 
+                                         class="w-16 h-16 object-contain transform group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">Database Systems</h4>
+                                    <a href="https://drive.google.com/file/d/1r6mrddPvgOyrAlqzn96OZi3X7mH0S-SM/view?usp=sharing" 
+                                       target="_blank" 
+                                       class="text-primary hover:text-blue-600 transform hover:scale-110 transition-all">
+                                        <i class="fas fa-external-link-alt text-lg"></i>
+                                    </a>
+                                </div>
+                                <p class="text-primary font-medium mb-1">NPTEL</p>
+                                <p class="text-sm text-gray-600">Mastery in database design, management, and optimization techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title font-['Poppins'] !text-3xl !font-extrabold">Let's Connect</h2>
+                <div class="max-w-lg mt-8">
+                    <p class="text-lg text-gray-600 mb-8">
+                        I'm actively seeking full-time Software Engineering roles starting June 2025.
+                        Let's discuss how I can contribute to your team!
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="mailto:surajr.kumart@gmail.com" class="icon-bounce flex flex-col items-center">
+                            <i class="fas fa-envelope text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rsurajkumar/" target="_blank" class="icon-bounce flex flex-col items-center">
+                            <i class="fab fa-linkedin text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/SurajRKU" target="_blank" class="icon-bounce flex flex-col items-center">
+                            <i class="fab fa-github text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>© 2024 Suraj Raghu Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS with custom settings
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+
+        // Add scroll padding for fixed header
+        document.documentElement.style.scrollPaddingTop = '80px';
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // View More functionality
+        document.querySelectorAll('.view-more-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.closest('.experience-content');
+                const preview = content.querySelector('.experience-preview');
+                const full = content.querySelector('.experience-full');
+                const text = this.querySelector('.view-more-text');
+                const icon = this.querySelector('.view-more-icon');
+
+                if (full.classList.contains('hidden')) {
+                    full.classList.remove('hidden');
+                    text.textContent = 'View Less';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    full.classList.add('hidden');
+                    text.textContent = 'View More';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Add scroll to top button
+        const scrollToTop = document.createElement('button');
+        scrollToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        scrollToTop.className = 'fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-blue-600';
+        scrollToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.body.appendChild(scrollToTop);
+
+        window.onscroll = () => {
+            scrollToTop.style.opacity = window.scrollY > 500 ? '1' : '0';
+            scrollToTop.style.pointerEvents = window.scrollY > 500 ? 'auto' : 'none';
+        };
+    </script>
+</body>
+</html> 
