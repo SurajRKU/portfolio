@@ -1,7 +1,7 @@
 {
-  "name": "aravinda-portfolio",
+  "name": "suraj-portfolio",
   "version": "1.0.0",
-  "description": "Professional portfolio website for Aravinda Raman Jatavallabha",
+  "description": "Professional portfolio website for Suraj Raghu Kumar",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
