@@ -4,7 +4,8 @@
   "description": "Professional portfolio website for Suraj Raghu Kumar",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "dependencies": {
     "aos": "^2.3.4"
